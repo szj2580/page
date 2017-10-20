@@ -1,0 +1,299 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: .32rem;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "黑体"; }
+
+ul, li {
+  list-style: none; }
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none; }
+
+input, button {
+  outline: 0; }
+
+button {
+  cursor: pointer; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ccc; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  background: #F3F3FE; }
+
+header {
+  width: 100%;
+  height: .88rem;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding-right: 10px; }
+  header a {
+    color: #333;
+    font-size: .45rem; }
+
+.container, .wrapper {
+  width: 100%;
+  height: 2.6rem; }
+
+.slide, .slide img {
+  width: 100%;
+  height: 100%; }
+
+section {
+  flex: 1;
+  overflow-y: scroll; }
+
+.swiper-pagination span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 0; }
+
+nav {
+  width: 100%;
+  height: 2.1rem;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  nav li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
+    width: 25%; }
+    nav li:nth-child(3) i.icon {
+      background: #FF6565; }
+    nav li:nth-child(1) i.icon {
+      background: #FF6565; }
+    nav li:nth-child(2) i.icon {
+      background: #FF9D3D; }
+    nav li:nth-child(4) i.icon {
+      background: #4183FF; }
+    nav li i.icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: red;
+      font-size: .5rem;
+      color: #fff;
+      line-height: 40px;
+      margin-left: 18px; }
+    nav li a {
+      font-size: .3rem;
+      padding-top: 5px;
+      color: #333;
+      line-height: .5rem; }
+
+.bsn {
+  width: 100%;
+  height: 1.5rem; }
+  .bsn img {
+    width: 100%;
+    height: 100%; }
+
+.ban {
+  width: 100%;
+  height: 1rem;
+  background: #fff; }
+  .ban h1 {
+    padding-left: 15px;
+    color: #333;
+    line-height: 1rem;
+    font-size: .4rem; }
+    .ban h1 span {
+      float: right;
+      display: inline-block;
+      padding-right: 20px; }
+      .ban h1 span b {
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        color: #fff;
+        background: #555555;
+        display: inline-block;
+        line-height: 20px;
+        text-align: center; }
+
+.list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff;
+  margin-bottom: 10px; }
+  .list li {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-right: 0; }
+    .list li:nth-child(3n) i.icon {
+      color: #4183FF; }
+    .list li:nth-child(5n) i.icon {
+      color: #EE7D7D; }
+    .list li:nth-child(6n) i.icon {
+      color: #7760EF; }
+    .list li:nth-child(4n) i.icon {
+      color: #11A874; }
+    .list li i.icon {
+      font-size: .66rem;
+      color: #F75757;
+      padding-top: 10px; }
+    .list li a {
+      font-size: .36rem;
+      color: #333;
+      padding: 5px 0; }
+
+#roll {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background: #fff;
+  margin-bottom: 10px; }
+  #roll dl {
+    width: 48%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 5px; }
+    #roll dl dt {
+      width: 100%;
+      height: auto; }
+      #roll dl dt img {
+        width: 98%;
+        height: auto; }
+    #roll dl dd {
+      padding: 3px 5px; }
+      #roll dl dd h3 {
+        font-size: .35rem;
+        color: #333;
+        padding-left: 5px; }
+      #roll dl dd p {
+        padding-bottom: 5px; }
+        #roll dl dd p span {
+          color: #f50;
+          padding-left: 3px;
+          font-size: .3rem; }
+        #roll dl dd p b {
+          text-decoration: line-through;
+          color: #ccc;
+          padding-left: 10px;
+          font-size: .24rem; }
+
+#color {
+  color: #ccc; }
+
+.pics {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  margin-bottom: 10px; }
+  .pics dl {
+    flex: 1;
+    border-right: 1px solid #ccc; }
+    .pics dl dt img {
+      width: 90%;
+      height: auto; }
+    .pics dl dd {
+      padding: 5px 5px; }
+      .pics dl dd h1 {
+        font-size: .38rem;
+        color: #212121;
+        padding-left: 5px;
+        line-height: 20px; }
+      .pics dl dd h2 {
+        font-size: .36rem;
+        color: #f50;
+        line-height: 20px;
+        padding-left: 1px; }
+
+.cars {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+  .cars dl {
+    width: 50%;
+    height: auto;
+    border-right: 1px solid #ccc; }
+  .cars dt img {
+    width: 100%;
+    height: auto; }
+  .cars dd {
+    padding: 5px; }
+    .cars dd h1 {
+      font-size: .38rem;
+      color: #333;
+      line-height: 30px; }
+    .cars dd h2 {
+      font-size: .36rem;
+      color: #666;
+      line-height: 20px; }
+    .cars dd h3 {
+      font-size: .4rem;
+      color: #f50;
+      line-height: 30px; }
+      .cars dd h3 b {
+        color: #666;
+        text-decoration: line-through; }
+
+footer {
+  width: 100%;
+  height: 1.5rem;
+  background: #FBFBFB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px; }
+  footer li {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    footer li i.icon {
+      color: #333;
+      font-size: .46rem; }
+    footer li a {
+      color: #333;
+      padding-top: 3px; }
+
+.page {
+  width: 100%;
+  height: 100%; }
+
+/*# sourceMappingURL=style.css.map */
